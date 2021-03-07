@@ -1,0 +1,24 @@
+$(document).ready(function(){
+    console.log('done1');
+    $('#img_tryn5').click(function(event){
+        $('#column_body_right').load("../setting/File_php/TryN5.php"); 
+    });    
+    $('#img_supiido').click(function(event){
+        $('#column_body_right').load("../setting/File_php/Supiido.php"); 
+    });    
+    $('#img_basickanji').click(function(event){
+        $('#column_body_right').load("../setting/File_php/Basickanji.php"); 
+    });   
+    $('#img_kanjilk').click(function(event){
+        $('#column_body_right').load("../setting/File_php/KanjiLK.php"); 
+    });  
+    $('#img_marugotoa1').click(function(event){
+        $('#column_body_right').load("../setting/File_php/MarugotoA1.php"); 
+    });  
+    $('#img_marugotob1').click(function(event){
+        $('#column_body_right').load("../setting/File_php/MarugotoB1.php"); 
+    });  
+});
+function auto() {
+    $('#column_body_right').load("../setting/File_php/TryN5.php"); 
+}

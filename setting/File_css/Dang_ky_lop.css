@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face 
+{
+    font-family: ArimaMadurai-Black;
+    src:url("file:///G:/IE104_Internet/DO_AN/setting/Font/ArimaMadurai-Black.ttf");
+    font-weight:bolder;
+}
+#div_01
+{
+    width: 750px;
+    padding: 10px 20px;
+}
+td
+{
+    padding: 5px;
+}
+.table_01
+{
+    margin: 0px;
+    width: 100%;
+    padding: 10px 20px;
+}
+.text
+{
+    font-size: 18px;
+    font-family: ArimaMadurai-Black;
+}
+.color_01
+{
+    color: #DD0408;
+}
+.td_01
+{
+    width: 30%;
+}
+#img_01
+{
+    width: 100px;
+    float:left;
+}
+.img_02
+{
+    width: 75px;
+    float: left;
+    padding-right: 10px;
+}
+#DKlop
+{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    color:#FBD7D8;
+    background-color: #0B299F;
+    border: #F58284 1px solid;
+}
+#div_02
+{
+    margin-left: 20%;
+    width: 650px;
+    border: #03028B 2px solid;
+    border-radius: 5%;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+#Nddongtien
+{
+    color: #F8D3D3;
+    background-color: #0B0AAB;
+    padding: 5px 20px;
+    border: #F59496 2px solid;
+    border-radius: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{background-color: #C9FFBC}
+#body_background
+{
+    background-image: url("../../img/Tim_hieu_NB/backgroud_body.jpg");
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: right;
+    background-size: cover;
+}
+.body_magin
+{
+    margin: 10px 150px;
+}
+.text
+{
+    font-size: 20px;
+    text-align: justify;
+}
+p
+{
+    text-indent: 1em;
+}
+#video_gt
+{
+    margin-left: 20%;
+}
+.div_column
+{
+    margin: 10px 20px;
+    width: 320px;
+    height: 567px;
+    border: #26E509 2px solid;
+    background-color: #E2F0F7;
+    padding: 20px 30px;
+}
+.a:link
+{
+    margin: 0;
+    color: #970608;
+    text-decoration: none;
+}
+.a:visited
+{
+    color: #970608;
+    text-decoration: none;
+}
+.a:hover
+{
+    color: #07D4F5;
+    text-decoration: underline;
+}
+.a:active
+{
+    color: #061EAD;
+    text-decoration: underline;
+}
+p
+{
+    padding: 10px;
+}

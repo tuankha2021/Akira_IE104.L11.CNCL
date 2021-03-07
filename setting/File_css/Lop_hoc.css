@@ -1,0 +1,103 @@
+@font-face 
+{
+    font-family: f1;
+    src:url("../Font/Prompt-MediumItalic.ttf");
+    font-weight:bolder;
+}
+h1
+{
+    font-family: f1;
+    color: blueviolet;
+}
+.modal-content1
+{
+    background-color:#E5F8E6;
+    margin: 1% 30% 5%; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    padding: 10px;
+    border: #06AB0A 1px solid;
+    box-shadow: 10px 10px 10px #75F461;
+}
+.div_content
+{
+    width: 60%;
+    background-color: white;
+    border: black double 4px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.div_lophoc
+{
+    width: 80%;
+}
+.h1_khochoc
+{
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: f1;    
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+.table_lophoc
+{
+    width: 100%;
+    margin: 0;
+}
+.div_N5
+{
+    display: none;
+}
+.hinh
+{
+    border-radius: 100px;
+    box-shadow: 10px 10px;
+    width: 150px;
+    margin: 40px 20px;
+}
+.hinh1
+{
+    border: 1px solid black;
+    box-shadow: 10px 10px;
+    width: 500px;
+}
+.hinh:hover
+{
+    border: black 5px;
+    border-radius: 0px;
+}
+.div_noidung1
+{
+    width: 80%;
+    font-size: 20px;
+    padding-top: 25px ;
+    padding-bottom: 25px;
+}
+.button_1
+{
+    background-color: orange;
+    color: white;
+    font-size: 24px;
+    border-radius: 15px;
+}
+body
+{
+    background-image:url("../../img/Lop_hoc/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#div_right
+{
+    width: 40%;
+}
+#div_left
+{
+    margin-top: 70px;
+    width: 45%;
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face 
+{
+    font-family: ArimaMadurai-Black;
+    src:url("file:///G:/IE104_Internet/DO_AN/setting/Font/ArimaMadurai-Black.ttf");
+    font-weight:bolder;
+}
+
+#div_01
+{
+    margin-left: 30%;
+    width: 600px;
+    border: #0418B7 1px solid;
+    padding: 10px 20px;
+}
+#img_01
+{
+    width: 100px;
+    float: left;
+}
+.p
+{
+    margin: 0px;
+    color: #08029C;
+}
+.text
+{
+    font-family: ArimaMadurai-Black;
+    font-size: 23px;
+}
+#h1_01
+{
+    margin: 5px;
+    color: #08029C;
+}
+#table_01
+{
+    width: 100%;
+    padding: 10px 20px;
+}
+#tuvan
+{
+    padding: 6px 40px;
+    color: #F8D3D3;
+    background-color: #0A039F;
+    border: #F98B8D 1px solid;
+}

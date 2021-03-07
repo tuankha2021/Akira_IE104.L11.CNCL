@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{height: 100%}
+@font-face 
+{
+    font-family: f1;
+    src:url("../Font/Prompt-MediumItalic.ttf");
+    font-weight:bolder;
+}
+@font-face 
+{
+    font-family: f2;
+    src:url("../Font/DancingScript-Bold.ttf");
+    font-weight:bolder;
+}
+.body_main
+{
+    background-image: url("");
+    background-color: deepskyblue;
+    background-origin: unset;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header_div
+{
+    /*border: 3px solid white;*/
+    background-color: orange;
+    font-size: 200%;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.div_middle
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    background-image: url(../../img/Trang_chu/images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: f1;    
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    font-family: f1;
+    font-size: 50px;
+    color: dodgerblue;
+    font-weight: bold;
+    text-align: center;
+
+}
+.p_middle
+{
+    color: blue;
+    font-weight: bold;
+    font-size: 200%;
+}
+.table_middle
+{
+    margin-top: 20px;
+    width: 80%;
+    align-self: center;
+}
+.div_gioithieu
+{
+    padding-top: 50px;
+    font-size: 20px;
+    color: black;
+}
+.button_dk
+{
+    margin-top: 30px;
+    margin-left: 200px;
+    color: blue;
+    background-color: lightblue;
+    border-radius: 25px;
+    font-size: 200%;
+    padding: 10px 10px 10px 10px;
+}
+.button_dk:hover
+{
+    color: white;
+    background-color: darkblue;
+}
+#div_00
+{
+    background-color: #1805B8;
+    
+}
+#div_nav
+{
+    width: 15%;
+    background-color: #AD9191;
+    padding-top: 30px;
+    width:22%;
+    float: left;
+}
+.div_content
+{
+    align-items: center;
+    background-color: white;
+    padding-bottom: 200px;
+    padding-top:50px
+}
+.div_khoahoc
+{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-family: f1;
+}
+.div_discount
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.table_discount
+{
+    width: 60%;
+    font-family: f2;
+}
+.p_discount
+{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.div_duhoc
+{
+    padding-top: 50px;
+    background-color: white;
+}
+.div_duhoc_noidung
+{
+    text-align: justify;
+}
+.table_duhoc
+{}
+.table_khoahoc
+{
+    margin-top: 20px;
+    width: 80%;
+    align-self: center;
+}
+
+.div_hocvien
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.td_hocvien
+{
+    font-family: f1;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+    vertical-align: top;
+    width: 33%;
+    text-align: justify;
+}
+.img_hocvien
+{
+    border-radius: 50%;
+    width: 100px;
+}
+
+.table_hocvien
+{
+    width: 60%;
+}
+.slideshow
+{
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+.middle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.navigation
+{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+.bar
+{
+    width: 50px;
+    height: 10px;
+    border: 2px solid white;
+    margin: 6px;
+    cursor: pointer;
+}
+.bar:hover{
+    background: white;
+}
+input[name="r"]
+{
+    position: absolute;
+    visibility: hidden;
+}
+#div_02
+{
+    width: 85%;
+   
+}

@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face 
+{
+    font-family: CormorantUpright-SemiBold;
+    src:url("../Font/CormorantUpright-SemiBold.ttf");
+    font-weight:bolder;
+}
+@font-face 
+{
+    font-family: DancingScript-Bold;
+    src:url("../Font/DancingScript-Bold.ttf");
+    font-weight:bolder;
+}
+html
+html
+{
+    height: 100%;
+}
+body
+{
+    background-color:#E8F6FB;
+}
+#column
+{
+    width: 3000px;
+    margin: 100px 10px;
+    height: 1000px;
+    padding-top: 30px;
+}
+.text_01
+{
+    font-family: CormorantUpright-SemiBold;
+    text-align: justify;
+}
+p
+{
+    text-indent: 1em;
+}
+h1
+{
+    color:#9A171A;
+}
+#gioithieu
+{
+    margin: 5px;
+    padding: 10px 60px 10px 70px;
+    font-size: 25px; 
+}
+#div_01
+{
+    margin-top: 75px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: DancingScript-Bold;
+    font-size: 40px;
+    color: #0FE121;
+}
+#slideshow 
+{
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+    border: #A3D1F7 2px solid;
+}
+.slide-wrapper 
+{
+    width: 3640px;
+    -webkit-animation: slide 45s ease infinite;
+}
+.slide 
+{
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+@-webkit-keyframes slide 
+{
+    10% {margin-left: 0px;}
+    20% {margin-left: -728px;}
+    30% {margin-left: -1456px;}
+    40% {margin-left: -2184px;}
+    60% {margin-left: -2912px;}
+    70% {margin-left: -2184px;}
+    80% {margin-left: -1456px;}
+    90% {margin-left: -728px;}
+    100% {margin-left: 0px;}
+}
+.div_GV
+{
+    margin: 10px 30px;
+    text-align: center;
+}
+.div_chitiet_gv
+{
+    width: 890px;
+    border: #45F308 2px solid;
+    background-image: url("../../img/Gioi_thieu/nen_div_ctgv.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.img_QR_code
+{
+    width: 50px;
+}
+.text_ctgv
+{
+    font-size: 25px;
+    color: #F1F8EA;
+}
+.table_ctgv
+{
+    
+    width: 80%;
+    margin: 50px 30px;
+    padding: 20px;
+}

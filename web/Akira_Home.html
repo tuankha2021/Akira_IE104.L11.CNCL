@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="vn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Trung tâm Nhật ngữ Akira</title>
+<link rel="stylesheet" href="../setting/File_css/Layout.css" />
+<link rel="stylesheet" href="../setting/File_css/Trang_Chu.css" />
+<link rel="stylesheet" href="../setting/File_css/Dang_nhap.css">
+<link rel="stylesheet" href="../setting/File_css/Dang_ky.css">
+</head>
+
+<body class="body_main">
+    <header id="header">
+       
+    </header>
+    <div id="div_00">
+        <section>
+        <nav>
+            <a href="Akira_Home.html"><img src="../img/Trang_chu/home.png" alt="Home" style="float:inherit" > Trang Chủ</a>
+            <a href="Gioi_Thieu.html">Giới Thiệu</a>
+            <a href="Lop_hoc.html">Lớp học</a>
+            <a href="Thu_vien.html">Thư viện</a>
+            <a href="Nhat_Ban.html">Tìm hiểu về nước Nhật</a>
+        </nav>
+                <button onclick="document.getElementById('div_login').style.display='block'" style="width:auto;" class="button_login">Đăng nhập</button>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="button_login">Đăng ký</button>
+            
+                <div id="div_login" class="modal text">
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('div_login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img src="../img/Trang_chu/logo-akira-education.png" alt="logo Akira" width="100px" style="float: left">
+                            <br>
+                            <h2 id="h2_00">Đăng Nhập</h2>
+                            <img src="../img/Trang_chu/avatar-1.jpg" alt="Avatar" class="avatar" width="100px">
+                            <h3 id="h3_00">Akira, こんにちは 。。。！</h3>
+                        </div>
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                            <div align="center">
+                                <button type="submit" class="text">Login</button>
+                            </div>
+                        </div>
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('div_login').style.display='none'" class="cancelbtn text">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('div_login');
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) 
+                    {
+                        if (event.target == modal) 
+                        {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+            
+            <div id="id01" class="modal_dk text_dk">
+        
+                <form class="modal-content_dk" action="/action_page.php">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close_dk" title="Close Modal">&times;</span>
+                    <div align="center">
+                    <img src="../img/logo-akira-education.png" width="100px" alt="Logo Akira" style="float: left"><br>
+                    <h1 id="h1_00"> Đăng ký tài khoản</h1>
+                    <p id="p_01">Akira, こんにちは 。。。！</p>
+                    <p>Xin chào thành viên mới !</p>
+                    <p>Mời bạn cung cấp thông tin theo mẫu dưới đây.</p>
+                    </div>
+                    <div class="container_dk">
+                        <label for="HoTen"><b>Họ và tên:</b></label>
+                        <input type="text" placeholder="Họ và tên" name="HoTen" required>
+                        <label for="GioiTinh"><b>Giới tính:</b></label>
+                        <p style="padding-left: 200px;">
+                        <input id="gt_01" name="GioiTinh" type="radio" required /> Nam &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="gt_02" name="GioiTinh" type="radio" required /> Nữ 
+                        </p>
+                        <label for="std"><b>Số điện thoại:</b></label>
+                        <input type="text" placeholder="Số điện thoại" name="std" required>
+                        <label for="NgheNghiep"><b>Nghề nghiệp:</b></label>
+                        <input type="text" placeholder="Nghề nghiệp" name="NgheNghiep" required>
+                        <label for="user"><b>Tên đăng nhập:</b></label>
+                        <input type="text" placeholder="Tên đăng nhập" name="user" required>
+        
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                        <div class="clearfix_dk">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn_dk text_dk">Cancel</button>
+                            <button type="submit" class="signupbtn_dk text_dk">Sign Up</button>
+                          </div>
+                    </div>
+              </form>
+            </div>
+
+                <script>
+                // Get the modal
+                    var modal = document.getElementById('id01');
+
+                // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                    if (event.target == modal) {
+                    modal.style.display = "none";}}
+                </script>
+
+        </section>
+    </div>
+    <div class="div_middle">
+        TRUNG TÂM TIẾNG NHẬT AKIRA<br>
+        LUYỆN THI JLPT HÀNG ĐẦU VIỆT NAM<br>
+        <div align="center" class="div_gioithieu">
+            <table align="center" style="width: 1000px;">
+                <tr align="center">
+                    <td style="width: 20%;"><img src="../img/Trang_chu/gt-1.png" width="100px"></td>
+                    <td style="width: 20%;"><img src="../img/Trang_chu/gt-2.png" width="100px"></td>
+                    <td style="width: 20%;"><img src="../img/Trang_chu/gt-3.png" width="100px"></td>
+                    <td style="width: 20%;"><img src="../img/Trang_chu/gt-4.png" width="100px"></td>
+                    <td style="width: 20%;"><img src="../img/Trang_chu/gt-5.png" width="100px"></td>
+                </tr>
+                <tr align="center">
+                    <td>Đội ngũ giáo viên chuyên nghiệp</td>
+                    <td>Lớp học ít người với cùng trình độ</td>
+                    <td>Hoạt động ngoại khóa phong phú</td>
+                    <td>Môi trường học tập thân thiện</td>
+                    <td>Vị trí trung tâm, giao thông thuận tiện</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="div_content">
+        <div class="div_khoahoc">
+            <h1>CÁC KHÓA HỌC</h1>
+            <table align="center" class="table_khoahoc">
+                <tr>
+                    <td style="width: 25%;">
+                        <img src="../img/Trang_chu/socap.PNG" alt="socap" width="300px">
+                    </td>
+                    <td style="width: 25%;">
+                        <img src="../img/Trang_chu/trungcap.PNG" alt="trungcap" width="300px">
+                    </td>
+                    <td style="width: 25%;">
+                        <img src="../img/Trang_chu/captop.PNG" alt="captop"  width="300px">
+                    </td>
+                    <td style="width: 25%;">
+                        <img src="../img/Trang_chu/luyenthi.PNG " alt="luyenthi" width="300px">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sơ cấp</td>
+                    <td>Trung cấp</td>
+                    <td>Cấp tốc</td>
+                    <td>Luyện thi</td>
+                </tr>
+                <tr style="color: gray;" valign="top">
+                    <td align="left" style="padding-left: 10px; font-size: 75%;">
+                        ► Đạt trình độ tiếng Nhật N4 về tất cả các kỹ năng: Từ vựng - Hán tự; Ngữ pháp, Nghe hiểu, Đọc hiểu.<br>
+                        ► Nắm chắc 3000 từ vựng, gần 300 mẫu ngữ pháp và hơn 200 chữ KANJI
+                    </td>
+                    <td align="left" style="padding-left: 10px; font-size: 75%;">
+                        ► Đạt trình độ kiến thức N3 với đầy đủ 4 kỹ năng: Từ vựng - Chữ Hán; Ngữ pháp, Nghe hiểu, Đọc hiểu<br>
+                        ► Nắm được gần 2000 từ vựng<br>
+                        ► Sử dụng thành thạo 650-800 chữ Kanji và 150 cấu trúc ngữ pháp tiếng Nhật
+                    </td>
+                    <td align="left" style="padding-left: 10px; font-size: 75%;">
+                        ► Nắm chắc kiến thức tiếng Nhật N4<br>
+                        ► Nắm được 800 – 1200 từ vựng cùng 167 chữ Kanji<br>
+                        ► Sử dụng thành thạo từ 80 – 110 mẫu ngữ pháp ở trình độ N4<br>
+                        ► Thành thạo 4 kỹ năng: Nghe – Đọc – Nói – Viết ở trình độ N4
+                    </td>
+                    <td align="left" style="padding-left: 10px; font-size: 75%;">
+                        ► Tập trung rèn luyện kỹ năng nói chuyện và hội thoại cơ bản như chào hỏi, diễn tả cảm xúc, diễn đạt các chủ đề hàng ngày, gần gũi trong cuộc sống.<br>
+                        ► Hình thành nền tảng giao tiếp vững chắc, chuẩn bị tốt nhất cho các học viên về mặt kiến thức để sẵn sàng bước chân vào môi trường thực tế.  
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>  
+    <div class="div_discount" align="center">
+        <table align="center" class="table_discount">
+            <td>
+                <img src="../img/Trang_chu/discount.png" alt="discount" width="800px">
+            </td>
+            <td style="padding-left: 50px;">
+                <p class="p_discount">MỪNG XUÂN 2021</p>
+                <p class="p_discount">ƯU ĐÃI 30%</p>
+                <p class="p_discount">ĐỐI VỚI TẤT CẢ CÁC KHÓA HỌC</p>
+            </td>
+        </table>
+    </div>
+    <div class="div_duhoc">
+        <table align="center" class="table_duhoc">
+            <td align="left" style="width: 500px;"> 
+                <div class="div_duhoc_noidung"></div>
+                    <p>Du học định hướng: chương trình du học phù hợp với mục tiêu cá nhân, giải pháp tài chính và ngân sách gia đình.</p>
+                    <p>Chương trình luyện thi EJU: là chương trình liên kết luyện thi, dành cho các bạn có nguyện vọng học tập tại các trường đại học của Nhật bản.</p>
+                    <p>Du học hướng nghiệp nhà hàng – khách sạn: bạn sẽ có việc làm chính thức tại chuỗi Nhà hàng – Khách sạn của Tập Đoàn TAP – Nhật Bản sau 01 năm du học.</p>
+                <input type="button" class="button_dk" value="Tìm hiểu thêm">
+            </td>
+            <td>
+                <img src="../img/Trang_chu/duhoc.jpg" alt="Duhoc" width="700px">
+            </td>
+        </table>
+    </div>
+    <div class="div_hocvien">
+        <h1 align="center">NHẬN XÉT CỦA HỌC VIÊN</h1>
+        <table align="center" class="table_hocvien">
+            <tr align="center">
+                <td style="width: 400px;"><img class="img_hocvien" src="../img/Trang_chu/avatar-1.jpg" alt="avata"></td>
+                <td style="width: 400px;"><img class="img_hocvien" src="../img/Trang_chu/avatar-2.png" alt="avata"></td>
+                <td style="width: 400px;"><img class="img_hocvien" src="../img/Trang_chu/avatar-3.jpg" alt="avata"></td>
+            </tr>
+            <tr align="left">
+                <td class="td_hocvien">►Thầy cô dạy rất nhiệt tình, thân thiện.<br>►Giáo án dễ tiếp thu, dễ hiểu<br>►Được giao tiếp liên tục với giáo viên người Việt lẫn người Nhật.</td>
+                <td class="td_hocvien">►Cơ sở vật chất đầy đủ cho việc học, tạo cảm giác thoải mái khi tới trường<br>►Có nơi để xe khi đi học. </td>
+                <td class="td_hocvien">►Học phí mắc quá dattebayo!<br>►Bố mình là hokage đệ tứ!</td>
+            </tr>
+            
+        </table>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="column">
+                <h3>Trung Tâm Nhật Ngữ Akira</h3>
+                <img src="../img/Trang_chu/logo-akira-education.png" alt="logo Akira" id="img_fo_01">
+                <p>Hotline: 0979798989</p>
+                <p>Email: Akira@gmail.com</p>
+            </div>
+            <div class="column">
+                <h3>Địa chỉ liên hệ</h3>
+                <p>Cơ sở 1: Số 284/7/15, Đường Lý Thường Kiệt, Phường 14, Quận 10, TP Hồ Chí Minh</p>
+                <p>Cơ Sở 2: Đường Nguyễn Huệ, phường Bến Nghé, Quận 1, TP Hồ Chí Minh</p>
+            </div>
+            <div class="column">
+                <h3>Các khóa học tại Akira</h3>
+                <p>Khóa học Online</p>
+                <p>Khóa luyện thi cấp tốc</p>
+                <p>Khóa tiếng Nhật giao tiếp</p>
+            </div>
+            <div class="column">
+                <h3>Địa chỉ Map</h3>
+                <img src="../img/Trang_chu/ban_do.JPG" alt="Bản đồ" id="im_fo_02" />
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

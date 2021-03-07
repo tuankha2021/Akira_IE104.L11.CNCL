@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="vn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Các lớp học</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="../setting/File_css/Layout.css" />
+<link rel="stylesheet" href="../setting/File_css/Dang_ky_lop.css" >
+<link rel="stylesheet" href="../setting/File_css/Lop_hoc.css" />
+<link rel="stylesheet" href="../setting/File_css/Dang_nhap.css">
+<link rel="stylesheet" href="../setting/File_css/Dang_ky.css">
+<script src="../setting/File_Js/Lop_hoc.js"></script>
+</head>
+    
+<body>
+    <header id="header"> 
+    </header>
+    <div id="div_00">
+        <section>
+        <nav>
+            <a href="Akira_Home.html"><img src="../img/Trang_chu/home.png" alt="Home" style="float:inherit" > Trang Chủ</a>
+            <a href="Gioi_Thieu.html">Giới Thiệu</a>
+            <a href="Lop_hoc.html">Lớp học</a>
+            <a href="Thu_vien.html">Thư viện</a>
+            <a href="Nhat_Ban.html">Tìm hiểu về nước Nhật</a>
+        </nav>
+                <button onclick="document.getElementById('div_login').style.display='block'" style="width:auto;" class="button_login">Đăng nhập</button>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="button_login">Đăng ký</button>
+            
+                <div id="div_login" class="modal text">
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('div_login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img src="../img/Trang_chu/logo-akira-education.png" alt="logo Akira" width="100px" style="float: left">
+                            <br>
+                            <h2 id="h2_00">Đăng Nhập</h2>
+                            <img src="../img/Trang_chu/avatar-1.jpg" alt="Avatar" class="avatar" width="100px">
+                            <h3 id="h3_00">Akira, こんにちは 。。。！</h3>
+                        </div>
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                            <div align="center">
+                                <button type="submit" class="text">Login</button>
+                            </div>
+                        </div>
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('div_login').style.display='none'" class="cancelbtn text">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('div_login');
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) 
+                    {
+                        if (event.target == modal) 
+                        {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+
+            <div id="id01" class="modal_dk text_dk">
+        
+                <form class="modal-content_dk" action="/action_page.php">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close_dk" title="Close Modal">&times;</span>
+                    <div align="center">
+                    <img src="../img/logo-akira-education.png" width="100px" alt="Logo Akira" style="float: left"><br>
+                    <h1 id="h1_00"> Đăng ký tài khoản</h1>
+                    <p id="p_01">Akira, こんにちは 。。。！</p>
+                    <p>Xin chào thành viên mới !</p>
+                    <p>Mời bạn cung cấp thông tin theo mẫu dưới đây.</p>
+                    </div>
+                    <div class="container_dk">
+                        <label for="HoTen"><b>Họ và tên:</b></label>
+                        <input type="text" placeholder="Họ và tên" name="HoTen" required>
+                        <label for="GioiTinh"><b>Giới tính:</b></label>
+                        <p style="padding-left: 200px;">
+                        <input id="gt_01" name="GioiTinh" type="radio" required /> Nam &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="gt_02" name="GioiTinh" type="radio" required /> Nữ 
+                        </p>
+                        <label for="std"><b>Số điện thoại:</b></label>
+                        <input type="text" placeholder="Số điện thoại" name="std" required>
+                        <label for="NgheNghiep"><b>Nghề nghiệp:</b></label>
+                        <input type="text" placeholder="Nghề nghiệp" name="NgheNghiep" required>
+                        <label for="user"><b>Tên đăng nhập:</b></label>
+                        <input type="text" placeholder="Tên đăng nhập" name="user" required>
+        
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                        <div class="clearfix_dk">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn_dk text_dk">Cancel</button>
+                            <button type="submit" class="signupbtn_dk text_dk">Sign Up</button>
+                          </div>
+                    </div>
+              </form>
+            </div>
+
+                <script>
+                // Get the modal
+                    var modal = document.getElementById('id01');
+
+                // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                    if (event.target == modal) {
+                    modal.style.display = "none";}}
+                </script>
+        </section>
+    </div>
+    <h1 class="h1_khochoc" style="color: darkred;">CÁC KHÓA HỌC</h1>
+    <section>
+        <div id="div_left">
+            
+            <section>
+                <div>
+                    <img id="hinhn5" class="hinh"  src="../img/Lop_hoc/N5.png">
+                </div>
+                <div>
+                    <img id="hinhn4" class="hinh"  src="../img/Lop_hoc/N4.png">
+                </div>
+                <div>
+                    <img id="hinhn3" class="hinh"  src="../img/Lop_hoc/N3.png">
+                </div>
+            </section>
+            <div id="noidung1" align="left" class="div_noidung1"></div>
+            
+            <section>
+                <div style="margin-left: 100px"><img id="hinhlt" class="hinh"  src="../img/Lop_hoc/LT.png"></div>
+                <div><img id="hinhgt" class="hinh"  src="../img/Lop_hoc/GT.png"></div>
+            </section>
+            
+            <div id="noidung2" align="left" class="div_noidung1"></div>
+        </div>
+        <div id="div_right">
+            <div>
+        <div id="div_01" class="text">
+            <div align="center">
+                <table class="table_01">
+                    <tr>
+                        <td width="50px">
+                            <img src="../img/logo-akira-education.png" id="img_01">
+                        </td>
+                        <td>
+                            <h2 class="color_01">Thông tin đăng ký lớp học</h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <form>
+                <table class="table_01">
+                    <tr>
+                        <td colspan="2" class="color_01">
+                            Thông tin cá nhân
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30%">
+                            Họ và Tên:
+                        </td>
+                        <td style="width: 70%">
+                            <input id="hoten" type="text" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Số điện thoại:
+                        </td>
+                        <td>
+                            <input id="std" type="text" maxlength="10" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email:
+                        </td>
+                        <td>
+                            <input id="email" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="color_01">
+                            Đăng ký lớp học
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Trình độ
+                        </td>
+                        <td>
+                            <input name="TrinhDo" type="radio" /> N5
+                            <input name="TrinhDo" type="radio" /> N4
+                            <input name="TrinhDo" type="radio" /> N3
+                            <input name="TrinhDo" type="radio" /> N2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Lớp học:
+                        </td>
+                        <td>
+                            <input name="LopHoc" type="radio" /> Ngữ pháp
+                            <input name="LopHoc" type="radio" /> Giao tiếp
+                            <input name="LopHoc" type="radio" /> Luyện thi 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hình thức:
+                        </td>
+                        <td>
+                            <input name="HinhThuc" type="radio" /> Online
+                            <input name="HinhThuc" type="radio" /> Offline
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Thời gian:
+                        </td>
+                        <td>
+                            <select id="ThoiGian_01" class="text">
+                                <option value="1" selected="selected">Thứ 2, Thứ 3, Thứ 4</option>
+                                <option value="2">Thứ 2, Thứ 4, Thứ 6</option>
+                                <option value="3">Thứ 3, Thứ 5, Thứ 7</option>
+                                <option value="4">Thứ 3, Thứ 4, Thứ 5</option>
+                            </select>
+                            <select id="ThoiGian_02" class="text" >
+                                <option value="1" selected="selected">7h30 - 9h00</option>
+                                <option value="2">9h00 - 10h30</option>
+                                <option value="3">15h00 - 16h30</option>
+                                <option value="4">17h00 - 18h30</option>
+                                <option value="5">18h30 - 20h00</option>
+                                <option value="6">20h00 - 21h30</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <div align="center">
+                    <input id="DKlop" onclick="document.getElementById('div_tt').style.display='block'" class="text" type="button" value="Đăng Ký">
+                </div>
+            </form>
+        </div>
+    </div>
+        </div>
+    </section>
+    
+    <div id="div_tt" class="modal text">
+<form class="animate" action="/action_page.php" method="post">
+    <div id="div_02" class="text" style="background-color: white;">
+        <table class="table_01">
+            <tr>
+                <td colspan="2" class="color_01" align="center">
+                    <h1 style="margin: 0">Thông tin học phí</h1>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_01">
+                    Chủ tài khoản:
+                </td>
+                <td>
+                    <img src="../img/logo-akira-education.png" class="img_02">
+                    Trung tâm Nhật ngữ Akira
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Số tài khoản:
+                </td>
+                    <td>
+                        314 100 01210304
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Tại Ngân Hàng
+                    </td>
+                    <td>
+                        <img src="../img/BIDV_logo.png" class="img_02">
+                        TMCP Đầu tư và Phát triển Việt Nam (BIDV) - CN Đông Sài Gòn
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nội dung:
+                    </td>
+                    <td>
+                        <div id="NoidungCK">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Số tiền:
+                    </td>
+                    <td>
+                        <div id="SotienCK">
+                        </div>
+                    </td>
+                </tr>
+        </table>
+        <div align="center">
+            <input id="Nddongtien" type="button" value="Tôi hiểu" onclick="document.getElementById('div_tt').style.display='none'" class="text">
+        </div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('div_tt');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('div_login');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) 
+{
+    if (event.target == modal) 
+    {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+    <footer>
+        <div class="row">
+            <div class="column">
+                <h3>Trung Tâm Nhật Ngữ Akira</h3>
+                <img src="../img/Trang_chu/logo-akira-education.png" id="img_fo_01">
+                <p>Hotline: 0979798989</p>
+                <p>Email: Akira@gmail.com</p>
+            </div>
+            <div class="column">
+                <h3>Địa chỉ liên hệ</h3>
+                <p>Cơ sở 1: Số 284/7/15, Đường Lý Thường Kiệt, Phường 14, Quận 10, TP Hồ Chí Minh</p>
+                <p>Cơ Sở 2: Đường Nguyễn Huệ, phường Bến Nghé, Quận 1, TP Hồ Chí Minh</p>
+            </div>
+            <div class="column">
+                <h3>Các khóa học tại Akira</h3>
+                <p>Khóa học Online</p>
+                <p>Khóa luyện thi cấp tốc</p>
+                <p>Khóa tiếng Nhật giao tiếp</p>
+            </div>
+            <div class="column">
+                <h3>Địa chỉ Map</h3>
+                <img src="../img/Trang_chu/ban_do.JPG" id="im_fo_02" />
+            </div>
+        </div>
+    </footer>
+    </body>

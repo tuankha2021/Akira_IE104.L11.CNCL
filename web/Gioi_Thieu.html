@@ -1,0 +1,280 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>Giới thiệu</title>
+<link rel="stylesheet" href="../setting/File_css/Layout.css" />
+<link rel="stylesheet" href="../setting/File_css/Gioi_Thieu.css">
+<link rel="stylesheet" href="../setting/File_css/Dang_nhap.css">
+<link rel="stylesheet" href="../setting/File_css/Dang_ky.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".div_GV").hover(function(){
+        $(this).css("box-shadow","5px 5px 10px blue")},
+        function(){$(this).css("box-shadow","1px 1px 5px green")});
+    });
+    $(document).ready(function(){
+        $("#du_hoc").hover(function(){
+        $(this).css("box-shadow","5px 5px 10px blue")},
+        function(){$(this).css("box-shadow","1px 1px 5px #E8F6FB")});
+    });
+    $(document).ready(function()
+    {
+        $("#GV_01").click(function(event)
+        {
+            $("#ctgv_01").load("../setting/File_php/GV/GV_01.php");
+        });
+        $("#GV_02").click(function(event)
+        {
+            $("#ctgv_01").load("../setting/File_php/GV/GV_02.php")
+        });
+        $("#GV_03").click(function(event)
+        {
+            $("#ctgv_01").load("../setting/File_php/GV/GV_03.php")
+        });
+        $("#GV_04").click(function(event)
+        {
+            $("#ctgv_02").load("../setting/File_php/GV/GV_04.php")
+        });
+        $("#GV_05").click(function(event)
+        {
+            $("#ctgv_02").load("../setting/File_php/GV/GV_05.php")
+        });
+        $("#GV_06").click(function(event)
+        {
+            $("#ctgv_02").load("../setting/File_php/GV/GV_06.php")
+        });
+    });
+    
+</script>
+</head>
+
+<body>
+    <header id="header">
+       
+    </header>
+        <div id="div_00">
+        <section>
+        <nav>
+            <a href="Akira_Home.html"><img src="../img/Trang_chu/home.png" alt="Home" style="float:inherit" > Trang Chủ</a>
+            <a href="Gioi_Thieu.html">Giới Thiệu</a>
+            <a href="Lop_hoc.html">Lớp học</a>
+            <a href="Thu_vien.html">Thư viện</a>
+            <a href="Nhat_Ban.html">Tìm hiểu về nước Nhật</a>
+        </nav>
+                <button onclick="document.getElementById('div_login').style.display='block'" style="width:auto;" class="button_login">Đăng nhập</button>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="button_login">Đăng ký</button>
+            
+                <div id="div_login" class="modal text">
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('div_login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img src="../img/Trang_chu/logo-akira-education.png" alt="logo Akira" width="100px" style="float: left">
+                            <br>
+                            <h2 id="h2_00">Đăng Nhập</h2>
+                            <img src="../img/Trang_chu/avatar-1.jpg" alt="Avatar" class="avatar" width="100px">
+                            <h3 id="h3_00">Akira, こんにちは 。。。！</h3>
+                        </div>
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                            <div align="center">
+                                <button type="submit" class="text">Login</button>
+                            </div>
+                        </div>
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('div_login').style.display='none'" class="cancelbtn text">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('div_login');
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) 
+                    {
+                        if (event.target == modal) 
+                        {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+
+            <div id="id01" class="modal_dk text_dk">
+        
+                <form class="modal-content_dk" action="/action_page.php">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close_dk" title="Close Modal">&times;</span>
+                    <div align="center">
+                    <img src="../img/logo-akira-education.png" width="100px" alt="Logo Akira" style="float: left"><br>
+                    <h1 id="h1_00"> Đăng ký tài khoản</h1>
+                    <p id="p_01">Akira, こんにちは 。。。！</p>
+                    <p>Xin chào thành viên mới !</p>
+                    <p>Mời bạn cung cấp thông tin theo mẫu dưới đây.</p>
+                    </div>
+                    <div class="container_dk">
+                        <label for="HoTen"><b>Họ và tên:</b></label>
+                        <input type="text" placeholder="Họ và tên" name="HoTen" required>
+                        <label for="GioiTinh"><b>Giới tính:</b></label>
+                        <p style="padding-left: 200px;">
+                        <input id="gt_01" name="GioiTinh" type="radio" required /> Nam &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="gt_02" name="GioiTinh" type="radio" required /> Nữ 
+                        </p>
+                        <label for="std"><b>Số điện thoại:</b></label>
+                        <input type="text" placeholder="Số điện thoại" name="std" required>
+                        <label for="NgheNghiep"><b>Nghề nghiệp:</b></label>
+                        <input type="text" placeholder="Nghề nghiệp" name="NgheNghiep" required>
+                        <label for="user"><b>Tên đăng nhập:</b></label>
+                        <input type="text" placeholder="Tên đăng nhập" name="user" required>
+        
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                        <div class="clearfix_dk">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn_dk text_dk">Cancel</button>
+                            <button type="submit" class="signupbtn_dk text_dk">Sign Up</button>
+                          </div>
+                    </div>
+              </form>
+            </div>
+
+                <script>
+                // Get the modal
+                    var modal = document.getElementById('id01');
+
+                // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                    if (event.target == modal) {
+                    modal.style.display = "none";}}
+                </script>
+
+        </section>
+    </div>
+    <div>
+    <section>
+        <div id="gioithieu" class="text_01">
+             <div id="div_01">“Chỉ tri thức mới giúp con người làm chủ cuộc sống của mình”</div>
+             <h1>Giới thiệu về Trung tâm Nhật ngữ Akira</h1>
+            <p>
+                Trong thời đại hội nhập phát triển kinh tế như hiện nay, ngoại ngữ không còn là một vấn đề xa lạ với bất kỳ ai. Khi nói về ngoại ngữ điều đầu tiên mọi người nghĩ đến chắc hẳn là tiếng Anh. Bên cạnh đó còn một số  ngôn ngữ khác như tiếng Trung, tiếng Hàn,... tất nhiên không thể thiếu tiếng nhật. Với làn sóng Du học và thực tập sinh mạng mẽ tiếng Nhật dần trở thành một ngôn ngữ "hot" không kém gì tiếng Anh. Ngoài việc học tiếng Nhật để phục vụ cho việc học, công việc thì "cầm" cái bằng tiếng Nhật trong tay cũng đang dần trở thành "trend" của giới trẻ. Nắm bắc đuọc tâm lý đó ngày 29/07/2010 trung tâm Nhật ngữ Akira được thành lập để đáp ứng nhu cầu học tiếng Nhật của nhiều bạn học viên.
+            </p>
+             <p>
+                Akira còn rất trẻ so với những trung tâm Nhật ngữ khác. Tuy nhiên không vì thế mà Akira chịu thua kém các trung tâm khác. Với đội ngũ giáo viên trẻ đầy nhiệt huyết cùng với cơ sở vật chất hiện đại giúp cho chất lượng lớp học của Akira được đánh giá rất cao. ngoài ra trung tâm còn tổ chức các hoạt động ngoại khóa giúp nâng cao khả năng giao tiếp của học viên cũng như giới thiệu về văn hóa Nhật đến các bạn học viên.
+             </p>
+             <span><h1>Cơ sở vật chất</h1></span>
+             <p>
+                  Ngoài việc chú trọng chất lượng giảng dạy thì cơ sở vật chất cũng là một vấn đề được ưu tiên hành đầu tại Akira. Không gian học tập thoải máy đầy đủ tiện nghi sẽ giúp học viên học tập hiệu quả hơn.
+            </p>
+             <p>
+                Mỗi phòng học được bố trí TV và loa để phục vụ cho việc giản dạy. Ngoài ra tại mỗi phòng học đều được lắp điều hòa tạo điều kiện thoải mái nhất cho sinh viên khi học tập tại đây.
+             </p>
+             <div id="slideshow">
+                 <div class="slide-wrapper">
+                     <div class="slide">
+                         <img src="../img/Gioi_thieu/Phong_hoc_01.jpg" alt="Phòng học 01">
+                     </div>
+                     <div class="slide">
+                         <img src="../img/Gioi_thieu/Phong_hoc_04.jpg" alt="Phòng tự học">
+                     </div>
+                     <div class="slide">
+                         <img src="../img/Gioi_thieu/Phong_hoc_02.jpg" alt="Phòng học 02">
+                     </div>
+                     <div class="slide">
+                         <img src="../img/Gioi_thieu/Phong_hoc_03.jpg" alt="Phòng học 03">
+                     </div>
+                     <div class="slide">
+                         <img src="../img/Gioi_thieu/Phong_hoc_05.jpg" alt="Phòng học 04">
+                     </div>
+                 </div>
+                 
+            </div>
+            <p align="center">Một số lớp học tại Trung tâm</p>
+            <span><h1>Đội ngũ giảng viên</h1></span>
+            <p>
+                   Akira có đội ngũ giảng viên trẻ giàu nhiệt huyết hứa hẹn sẽ mang đến cho học viên những giờ học thoải mái nhất, vui vẻ nhất. Vâè trình độ tất cả các giảng viên của Akira đều có trình độ N2, N1 ngoài ra đa số giảng viên đều có thời gian học tập và làm việc tại Nhật.
+             </p>
+             <p>
+                  Đội ngũ giáo viên bản sứ là những giáo viên vui tính, được Akira tuyển chọn đặc biệt và đã đạt được chứng chỉ giảng dạy tiếng Nhật.
+            </p>
+            
+            <div id="ctgv_01" align="center">
+                 
+            </div>
+            
+            <section>
+                <div class="div_GV" id="GV_01">
+                    <img src="../img/Gioi_thieu/GV_Nguyen_Thi_Hoa.jpg" alt="Giáo viên: cô Nguyễn Thị Hoa">
+                    <p>Cô: Nguyễn Thị Hoa</p>
+                    
+                </div>
+                <div class="div_GV" id="GV_02">
+                    <img src="../img/Gioi_thieu/GV_Thuong.jpg" alt="Giáo viên: cô Dương Thị Thương">
+                    <p>Cô: Dương Thị Thương</p>
+                </div>
+                <div class="div_GV" id="GV_03">
+                    <img src="../img/Gioi_thieu/GV_Pham_Ho_Nhu_Y.png" alt="Giáo viên: cô Phạm Hồ Như ý">
+                    <p>Cô: Phạm Hồ Như Ý</p>
+                </div>
+            </section>
+        
+            <div id="ctgv_02" align="center"> </div>
+            
+            <section>
+                <div class="div_GV " id="GV_04">
+                    <img src="../img/Gioi_thieu/GV_Ueda_Naohiro.png" alt="Giáo viên: thầy Ueda Naohiro">
+                    <p>Thầy: Ueda Naohiro</p>
+                </div>
+                <div class="div_GV" id="GV_05">
+                    <img src="../img/Gioi_thieu/GV_Takimoto_Mari.jpg" alt="Giáo viên : cô Takimoto Mari">
+                    <p>Cô: Takimoto Mari</p>
+                </div>
+                <div class="div_GV" id="GV_06">
+                    <img src="../img/Gioi_thieu/GV-Aoyama_Norito.png" alt="Giáo viên: thầy Aoyama Norito">
+                    <p>Thầy: Aoyama Norito</p>
+                </div>
+            </section>
+        </div>
+        <div class="column sticky" id="column">
+            <a href="https://www.vjcchcmc.org.vn/tin-tuc/430/21-hoi-thao-du-hoc-va-viec-lam-nhat-ban-nam-2019.html" target="_blank"><img src="../img/Gioi_thieu/duhoc2019.jpg" alt="Poster du học 2019" width="250px" id="du_hoc"></a>
+        </div>
+    </section>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="column">
+                <h3>Trung Tâm Nhật Ngữ Akira</h3>
+                <img src="../img/Trang_chu/logo-akira-education.png" alt="Logo Akira" id="img_fo_01">
+                <p>Hotline: 0979798989</p>
+                <p>Email: Akira@gmail.com</p>
+            </div>
+            <div class="column">
+                <h3>Địa chỉ liên hệ</h3>
+                <p>Cơ sở 1: Số 284/7/15, Đường Lý Thường Kiệt, Phường 14, Quận 10, TP Hồ Chí Minh</p>
+                <p>Cơ Sở 2: Đường Nguyễn Huệ, phường Bến Nghé, Quận 1, TP Hồ Chí Minh</p>
+            </div>
+            <div class="column">
+                <h3>Các khóa học tại Akira</h3>
+                <p>Khóa học Online</p>
+                <p>Khóa luyện thi cấp tốc</p>
+                <p>Khóa tiếng Nhật giao tiếp</p>
+            </div>
+            <div class="column">
+                <h3>Địa chỉ Map</h3>
+                <img src="../img/Trang_chu/ban_do.JPG" alt="Bản đồ Akira" id="im_fo_02" />
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

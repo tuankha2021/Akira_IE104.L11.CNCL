@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Đôi nét về Nhật Bản</title>
+<link rel="stylesheet" href="../setting/File_css/Layout.css">
+<link rel="stylesheet" href="../setting/File_css/Nhat_ban.css">
+<link rel="stylesheet" href="../setting/File_css/Dang_nhap.css">
+<link rel="stylesheet" href="../setting/File_css/Dang_ky.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".div_column").hover(function(){
+        $(this).css("box-shadow","5px 5px 10px blue")},
+        function(){$(this).css("box-shadow","1px 1px 5px green")});
+    });
+</script>
+</head>
+
+<body>
+    <header id="header">
+       
+    </header>
+    <div id="div_00">
+        <section>
+        <nav>
+            <a href="Akira_Home.html"><img src="../img/Trang_chu/home.png" alt="Home" style="float:inherit" > Trang Chủ</a>
+            <a href="Gioi_Thieu.html">Giới Thiệu</a>
+            <a href="Lop_hoc.html">Lớp học</a>
+            <a href="Thu_vien.html">Thư viện</a>
+            <a href="Nhat_Ban.html">Tìm hiểu về nước Nhật</a>
+        </nav>
+                <button onclick="document.getElementById('div_login').style.display='block'" style="width:auto;" class="button_login">Đăng nhập</button>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="button_login">Đăng ký</button>
+            
+                <div id="div_login" class="modal text">
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('div_login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img src="../img/Trang_chu/logo-akira-education.png" alt="logo Akira" width="100px" style="float: left">
+                            <br>
+                            <h2 id="h2_00">Đăng Nhập</h2>
+                            <img src="../img/Trang_chu/avatar-1.jpg" alt="Avatar" class="avatar" width="100px">
+                            <h3 id="h3_00">Akira, こんにちは 。。。！</h3>
+                        </div>
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                            <div align="center">
+                                <button type="submit" class="text">Login</button>
+                            </div>
+                        </div>
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('div_login').style.display='none'" class="cancelbtn text">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('div_login');
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) 
+                    {
+                        if (event.target == modal) 
+                        {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+
+            <div id="id01" class="modal_dk text_dk">
+        
+                <form class="modal-content_dk" action="/action_page.php">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close_dk" title="Close Modal">&times;</span>
+                    <div align="center">
+                    <img src="../img/logo-akira-education.png" width="100px" alt="Logo Akira" style="float: left"><br>
+                    <h1 id="h1_00"> Đăng ký tài khoản</h1>
+                    <p id="p_01">Akira, こんにちは 。。。！</p>
+                    <p>Xin chào thành viên mới !</p>
+                    <p>Mời bạn cung cấp thông tin theo mẫu dưới đây.</p>
+                    </div>
+                    <div class="container_dk">
+                        <label for="HoTen"><b>Họ và tên:</b></label>
+                        <input type="text" placeholder="Họ và tên" name="HoTen" required>
+                        <label for="GioiTinh"><b>Giới tính:</b></label>
+                        <p style="padding-left: 200px;">
+                        <input id="gt_01" name="GioiTinh" type="radio" required /> Nam &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="gt_02" name="GioiTinh" type="radio" required /> Nữ 
+                        </p>
+                        <label for="std"><b>Số điện thoại:</b></label>
+                        <input type="text" placeholder="Số điện thoại" name="std" required>
+                        <label for="NgheNghiep"><b>Nghề nghiệp:</b></label>
+                        <input type="text" placeholder="Nghề nghiệp" name="NgheNghiep" required>
+                        <label for="user"><b>Tên đăng nhập:</b></label>
+                        <input type="text" placeholder="Tên đăng nhập" name="user" required>
+        
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                        <div class="clearfix_dk">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn_dk text_dk">Cancel</button>
+                            <button type="submit" class="signupbtn_dk text_dk">Sign Up</button>
+                          </div>
+                    </div>
+              </form>
+            </div>
+
+                <script>
+                // Get the modal
+                    var modal = document.getElementById('id01');
+
+                // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                    if (event.target == modal) {
+                    modal.style.display = "none";}}
+                </script>
+
+        </section>
+    </div>
+    <div align="center">
+        <img src="../img/Tim_hieu_NB/title.jpg" alt="Đôi nét về Nhật Bản">
+    </div>
+    
+    <div class="body_magin text">
+        <h1>Giới thiệu về Nhật Bản</h1>
+        <div align="center" class="text" id="video_gt">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/qqfVhDIwzS0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <p style="margin-left: 20%">Giới thiệu về Nhật Bản</p>
+        </div>
+        <p>Nhật Bản (日本) là một đảo quốc tọa lạc trên Thái Bình Dương, phần lãnh thổ là một quần đảo núi lửa rộng lớn hình cánh cung được bao xung quanh là biển. Quốc đảo Nhật Bản có 5 hòn đảo chính là Honshu, Hokkaido, Okinawa, Kyushu và Shikoku.</p>
+        <div style="float: right" align="center">
+            <a href="https://vi.wikipedia.org/wiki/Nh%E1%BA%ADt_B%E1%BA%A3n"><img src="../img/Tim_hieu_NB/ban_do.png" alt="Bản đồ các vùng Nhật Bản" style="padding-left: 30px"></a>
+            <p>Bản đồ các vùng Nhật Bản</p>
+        </div>
+        <p>Đất nước Nhật Bản trên bản đồ được chia thành 8 vùng là: Tohoku, Kanto, Chubu, Kinki, Chugoku, Shikoku, Kyushu và đảo Hokkaido.</p>
+        
+        <p>Xứ sở mặt trời mọc Nhật Bản từ lâu đã được coi là một nơi đáng sống bởi nó chứa đựng những giá trị đặc biệt mà bạn sẽ khó tìm thấy ở các quốc gia khác.</p>
+            
+        <p>Nhắc đến Nhật Bản, chắc hẳn bạn sẽ nghĩ ngay đến con người Nhật Bản đầy tính kỷ luật, tự giác, chăm chỉ, người Nhật luôn khiến thế giới phải thán phục trước những hành động nhỏ nhất của mình.</p>
+            
+        <p>Nhật Bản cũng là điểm dừng chân tuyệt vời với phong cảnh đẹp, đường phố sạch sẽ và có truyền thống văn hóa hết sức đặc sắc. Cũng chính vì vậy mà Nhật Bản trở thành điểm đến của nhiều khách du lịch cũng như du học sinh và người lao động nước ngoài.</p>
+        
+        <div align="center">
+            <img src="../img/Tim_hieu_NB/001.jpg" alt="Một gốc phố xuất hiện trong anime" />
+            <p> Một góc phố tại Nhật</p>
+        </div>
+            
+        <p>Đa số các tỉnh thành Nhật Bản đều có khí hậu ôn đới, phong cảnh cũng thay đổi theo từng mùa tạo nên một diện mạo Nhật Bản vô cùng quyến rũ và đầy sức hút mỗi thời điểm giao mùa.Tại xứ sở hoa anh đào bạn có thể cảm nhận được đặc điểm rõ rệt của 4 mùa xuân, hạ, thu, đông và thời tiết ở mỗi vùng cũng sẽ có nét khác biệt. Vào mùa xuân tiết trời thoải mái, dễ chịu.Riêng Hokkaido, có mùa hè mát mẻ và mùa đông lạnh giá, đây cũng là nơi có tuyết rơi nhiều ở Nhật Bản.</p>
+    </div>
+    
+    <div class="body_magin text">
+        <h1>Những nét văn hóa độc đáo</h1>
+        <section>
+            <a href="https://jes.edu.vn/nhung-net-van-hoa-dac-sac-cua-nhat-ban" target="_blank" class="a">
+            <div class="div_column">
+                <div align="center"><img src="../img/Tim_hieu_NB/002.jpg" alt="Văn hóa cuối chào"></div>
+                <div>
+                    <h3 align="center">Văn hóa trong giao tiếp tại Nhật Bản</h3>
+                    <div></div>
+                </div>
+            </div></a>
+            <a href="https://jes.edu.vn/nhung-net-van-hoa-dac-sac-cua-nhat-ban" target="_blank" class="a">
+            <div class="div_column">
+                <div align="center"><img src="../img/Tim_hieu_NB/003.jpg" alt="Lễ nghi của Nhật Bản"></div>
+                <div>
+                    <h3 align="center">Lễ nghi của Nhật Bản</h3>
+                    <div></div>
+                </div>
+                </div></a>
+            <a href="https://jes.edu.vn/nhung-net-van-hoa-dac-sac-cua-nhat-ban" target="_blank" class="a">
+            <div class="div_column">
+                <div align="center"><img src="../img/Tim_hieu_NB/004.jpg" alt="Tinh thần võ sĩ đạo trong văn hóa Nhật Bản"></div>
+                <div>
+                    <h3>Tinh thần võ sĩ đạo trong văn hóa Nhật Bản</h3>
+                    <div></div>
+                </div>
+                </div></a>
+        </section>
+    </div>
+    <div class="body_magin">
+        <h1>Những lễ hội đặc sắc</h1>
+        <section>
+            <a href="https://satovietnhat.com.vn/5-le-hoi-truyen-thong-van-hoa-dac-sac-tai-nhat-ban" target="_blank" class="a">
+            <div class="div_column">
+                <div align="center"><img src="../img/Tim_hieu_NB/005.jpg" alt="LỄ HỘI HOA ANH ĐÀO HANAMI"></div>
+                <div>
+                    <h3 align="center">LỄ HỘI HOA ANH ĐÀO HANAMI</h3>
+                </div>
+            </div>
+            </a>
+            <a href="https://satovietnhat.com.vn/5-le-hoi-truyen-thong-van-hoa-dac-sac-tai-nhat-ban" target="_blank" class="a">
+            <div class="div_column">
+                <div align="center"><img src="../img/Tim_hieu_NB/006.jpg" alt="LỄ HỘI CÁ CHÉP KOINOBORI MATSURI"></div>
+                <div>
+                    <h3 align="center">LỄ HỘI CÁ CHÉP KOINOBORI MATSURI</h3>
+                </div>
+            </div>
+            </a>
+            <a href="https://satovietnhat.com.vn/5-le-hoi-truyen-thong-van-hoa-dac-sac-tai-nhat-ban" target="_blank" class="a">
+            <div class="div_column">
+                <div align="center"><img src="../img/Tim_hieu_NB/007.jpg" alt="LỄ HỘI ĐÈN LỒNG OBON"></div>
+                <div>
+                    <h3 align="center">LỄ HỘI ĐÈN LỒNG OBON</h3>
+                </div>
+            </div>
+            </a>
+        </section>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="column">
+                <h3>Trung Tâm Nhật Ngữ Akira</h3>
+                <img src="../img/Trang_chu/logo-akira-education.png" alt="Logo Akira" id="img_fo_01">
+                <p>Hotline: 0979798989</p>
+                <p>Email: Akira@gmail.com</p>
+            </div>
+            <div class="column">
+                <h3>Địa chỉ liên hệ</h3>
+                <p>Cơ sở 1: Số 284/7/15, Đường Lý Thường Kiệt, Phường 14, Quận 10, TP Hồ Chí Minh</p>
+                <p>Cơ Sở 2: Đường Nguyễn Huệ, phường Bến Nghé, Quận 1, TP Hồ Chí Minh</p>
+            </div>
+            <div class="column">
+                <h3>Các khóa học tại Akira</h3>
+                <p>Khóa học Online</p>
+                <p>Khóa luyện thi cấp tốc</p>
+                <p>Khóa tiếng Nhật giao tiếp</p>
+            </div>
+            <div class="column">
+                <h3>Địa chỉ Map</h3>
+                <img src="../img/Trang_chu/ban_do.JPG" alt="Map Akira" id="im_fo_02" />
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

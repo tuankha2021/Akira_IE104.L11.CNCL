@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Thư viện</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../setting/File_Js/Thu_vien.js"></script>
+<link rel="stylesheet" href="../setting/File_css/Layout.css" />
+<link rel="stylesheet" href="../setting/File_css/Thu_vien.css"/>
+<link rel="stylesheet" href="../setting/File_css/Dang_nhap.css">
+<link rel="stylesheet" href="../setting/File_css/Dang_ky.css">
+<script>
+    $(document).ready(function(){
+        $(".div_02").hover(function(){
+        $(this).css("box-shadow","5px 5px 10px blue")},
+        function(){$(this).css("box-shadow","1px 1px 5px green")});
+    });
+</script>
+</head>
+
+<body>
+    <header id="header">
+       
+    </header>
+    <div id="div_00">
+        <section>
+        <nav>
+            <a href="Akira_Home.html"><img src="../img/Trang_chu/home.png" alt="Home" style="float:inherit" > Trang Chủ</a>
+            <a href="Gioi_Thieu.html">Giới Thiệu</a>
+            <a href="Lop_hoc.html">Lớp học</a>
+            <a href="Thu_vien.html">Thư viện</a>
+            <a href="Nhat_Ban.html">Tìm hiểu về nước Nhật</a>
+        </nav>
+                <button onclick="document.getElementById('div_login').style.display='block'" style="width:auto;" class="button_login">Đăng nhập</button>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="button_login">Đăng ký</button>
+            
+                <div id="div_login" class="modal text">
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('div_login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img src="../img/Trang_chu/logo-akira-education.png" alt="logo Akira" width="100px" style="float: left">
+                            <br>
+                            <h2 id="h2_00">Đăng Nhập</h2>
+                            <img src="../img/Trang_chu/avatar-1.jpg" alt="Avatar" class="avatar" width="100px">
+                            <h3 id="h3_00">Akira, こんにちは 。。。！</h3>
+                        </div>
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                            <div align="center">
+                                <button type="submit" class="text">Login</button>
+                            </div>
+                        </div>
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('div_login').style.display='none'" class="cancelbtn text">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('div_login');
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) 
+                    {
+                        if (event.target == modal) 
+                        {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+
+            <div id="id01" class="modal_dk text_dk">
+        
+                <form class="modal-content_dk" action="/action_page.php">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close_dk" title="Close Modal">&times;</span>
+                    <div align="center">
+                    <img src="../img/logo-akira-education.png" width="100px" alt="Logo Akira" style="float: left"><br>
+                    <h1 id="h1_00"> Đăng ký tài khoản</h1>
+                    <p id="p_01">Akira, こんにちは 。。。！</p>
+                    <p>Xin chào thành viên mới !</p>
+                    <p>Mời bạn cung cấp thông tin theo mẫu dưới đây.</p>
+                    </div>
+                    <div class="container_dk">
+                        <label for="HoTen"><b>Họ và tên:</b></label>
+                        <input type="text" placeholder="Họ và tên" name="HoTen" required>
+                        <label for="GioiTinh"><b>Giới tính:</b></label>
+                        <p style="padding-left: 200px;">
+                        <input id="gt_01" name="GioiTinh" type="radio" required /> Nam &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="gt_02" name="GioiTinh" type="radio" required /> Nữ 
+                        </p>
+                        <label for="std"><b>Số điện thoại:</b></label>
+                        <input type="text" placeholder="Số điện thoại" name="std" required>
+                        <label for="NgheNghiep"><b>Nghề nghiệp:</b></label>
+                        <input type="text" placeholder="Nghề nghiệp" name="NgheNghiep" required>
+                        <label for="user"><b>Tên đăng nhập:</b></label>
+                        <input type="text" placeholder="Tên đăng nhập" name="user" required>
+        
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                        <div class="clearfix_dk">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn_dk text_dk">Cancel</button>
+                            <button type="submit" class="signupbtn_dk text_dk">Sign Up</button>
+                          </div>
+                    </div>
+              </form>
+            </div>
+
+                <script>
+                // Get the modal
+                    var modal = document.getElementById('id01');
+
+                // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                    if (event.target == modal) {
+                    modal.style.display = "none";}}
+                </script>
+
+        </section>
+    </div>
+    <div>
+        
+        <div id="div_title"  align="center">
+            <img src="../img/Thu_vien/0003.jpg" alt="Thư viện Online Akira">
+        </div>
+    </div>
+    <section>
+    <div id="div_body">
+        <div class="div_01">
+            <h1>Sách học thuật - Giáo trình</h1>
+            <section>
+                <div class="div_02">
+                    <img id="img_tryn5" src="../img/Thu_vien/Giao_trinh/Try_N5/01.JPG" alt="Try N5" class="img_01">
+                    <p>Try N5</p>
+                </div>
+                <div class="div_02">
+                    <img id="img_supiido" src="../img/Thu_vien/Giao_trinh/Supiido N3/01.JPG" alt="スピード N3" class="img_01">
+                    <p>スピード N3</p>
+                </div>
+                <div class="div_02">
+                    <img id="img_marugotob1" src="../img/Thu_vien/Giao_trinh/Marugoto_B1/01.JPG" alt="まろごと" class="img_01">
+                    <p>まろごと B1</p>
+                </div>
+            </section>
+            <section>
+                <div class="div_02">
+                    <img id="img_marugotoa1" src="../img/Thu_vien/Giao_trinh/Marugoto_A1/01.jpg" alt="まろごと A1" class="img_01">
+                    <p>まろごと A1</p>
+                </div>
+                <div class="div_02">
+                    <img id="img_kanjilk" src="../img/Thu_vien/Giao_trinh/Kanji_LK/01.JPG" alt="Kanji Look and Learn" class="img_01">
+                    <p>Kanji Look and Learn</p>
+                </div>
+                <div class="div_02">
+                    <img id="img_basickanji" src="../img/Thu_vien/Giao_trinh/Basickanji/01.JPG" alt="Basic kanji book vol.1" class="img_01">
+                    <p>Basic kanji book vol.1</p>
+                </div>
+            </section>
+        </div>
+        <div class="div_01">
+            <h1>Sách tham khảo - Luyện thi</h1>
+            <section>
+                <div class="div_02">
+                    <img src="../img/Thu_vien/Sach_tham_khao/GENKI_II/01.jpg" alt="げんきな絵カード II" class="img_01">
+                    <p>げんきな絵カード II</p>
+                </div>
+                <div class="div_02">
+                    <img src="../img/Thu_vien/Sach_tham_khao/完全模試Ｎ２/01.jpg" alt="完全模試Ｎ２" class="img_01">
+                    <p>完全模試Ｎ２</p>
+                </div>
+                <div class="div_02">
+                    <img src="../img/Thu_vien/Sach_tham_khao/Mimikara_N3/01.jpg" alt="耳から覚える＿N3" class="img_01">
+                    <p>耳から覚える＿N3</p>
+                </div>
+            </section>
+        </div>
+        <div class="div_01">
+            <h1>Truyện tranh - Manga bản raw</h1>
+            <section>
+                <div class="div_02">
+                    <img src="../img/Thu_vien/truyen_tranh/truyen_01/01.jpg" alt="Ore dake Haireru Kakushi Dungeon: Kossori Kitaete Sekai Saikyou" class="img_01">
+                    <p>Ore dake Haireru Kakushi Dungeon: Kossori Kitaete Sekai Saikyou</p>
+                </div>
+                <div class="div_02">
+                    <img src="../img/Thu_vien/truyen_tranh/truyen_02/01.jpg" alt="Fenrir Kaasan to Attakago Meshi: Isekai Mofumofu Seikatsu" class="img_01">
+                    <p>Fenrir Kaasan to Attakago Meshi: Isekai Mofumofu Seikatsu</p>
+                </div>
+                <div class="div_02">
+                    <img src="../img/Thu_vien/truyen_tranh/truyen_03/01.jpg" alt="Nnageki no Bourei wa Intai Shitai - Saijiyaku Hanta ni Yoru Saikiyou Patei Ikusei Jutsu" class="img_01">
+                    <p>Nnageki no Bourei wa Intai Shitai - Saijiyaku Hanta ni Yoru Saikiyou Patei Ikusei Jutsu</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="column sticky" id="column_body_right" align="center">
+        <div class="row">
+            <div class="column" id="left_div_00">
+                <div class=" div_border">
+                    <img src="../img/Thu_vien/truyen_tranh/truyen_02/01.jpg" alt="Fenrir Kaasan to Attakago Meshi: Isekai Mofumofu Seikatsu" class="img_02">
+                </div>
+                <div class=" div_border">
+                    <img src="../img/Thu_vien/truyen_tranh/truyen_02/02.jpg" alt="Fenrir Kaasan to Attakago Meshi: Isekai Mofumofu Seikatsu" class="img_02">
+                </div>
+                <div class=" div_border">
+                    <img src="../img/Thu_vien/truyen_tranh/truyen_02/03.jpg" alt="Fenrir Kaasan to Attakago Meshi: Isekai Mofumofu Seikatsu" class="img_02">
+                </div>
+                <div class=" div_border">
+                    <img src="../img/Thu_vien/truyen_tranh/truyen_02/04.jpg" alt="Fenrir Kaasan to Attakago Meshi: Isekai Mofumofu Seikatsu" class="img_02">
+                </div>
+                <div class=" div_border">
+                    <img src="../img/Thu_vien/truyen_tranh/truyen_02/05.jpg" alt="Fenrir Kaasan to Attakago Meshi: Isekai Mofumofu Seikatsu" class="img_02">
+                </div>
+            </div>
+            <div id="right_div_01" align="center">
+                <img src="../img/Thu_vien/truyen_tranh/truyen_02/01.jpg" alt="Fenrir Kaasan to Attakago Meshi: Isekai Mofumofu Seikatsu" class="img_03">
+            </div>
+        </div>
+        <div>
+            <div class="text_div_column">Fenrir Kaasan to Attakago Meshi: Isekai Mofumofu Seikatsu</div>
+            <table class="table_01">
+                <tr>
+                    <td width="100px">Link:</td>
+                    <td><div id="link"></div>https://bom.to/zA4AUj5n</td>
+                </tr>
+                <tr>
+                    <td>Thể loại:</td>
+                    <td><div id="the_loai">Truyện tranh, Manga </div></td>
+                </tr>
+                <tr>
+                    <td>Review:</td>
+                    <td><div id="review"> </div></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="column">
+                <h3>Trung Tâm Nhật Ngữ Akira</h3>
+                <img src="../img/Trang_chu/logo-akira-education.png" alt="Logo Akira" id="img_fo_01">
+                <p>Hotline: 0979798989</p>
+                <p>Email: Akira@gmail.com</p>
+            </div>
+            <div class="column">
+                <h3>Địa chỉ liên hệ</h3>
+                <p>Cơ sở 1: Số 284/7/15, Đường Lý Thường Kiệt, Phường 14, Quận 10, TP Hồ Chí Minh</p>
+                <p>Cơ Sở 2: Đường Nguyễn Huệ, phường Bến Nghé, Quận 1, TP Hồ Chí Minh</p>
+            </div>
+            <div class="column">
+                <h3>Các khóa học tại Akira</h3>
+                <p>Khóa học Online</p>
+                <p>Khóa luyện thi cấp tốc</p>
+                <p>Khóa tiếng Nhật giao tiếp</p>
+            </div>
+            <div class="column">
+                <h3>Địa chỉ Map</h3>
+                <img src="../img/Trang_chu/ban_do.JPG" alt="Map Akira" id="im_fo_02" />
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

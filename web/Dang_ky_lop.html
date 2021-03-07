@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="file:///G:/IE104_Internet/DO_AN/setting/File_css/Dang_ky_lop.css" >
+<title>Form đăng ký lớp học</title>
+</head>
+
+<body>
+    <div id="div_01" class="text">
+        <div>
+            <table class="table_01">
+                <tr>
+                    <td width="50px">
+                        <img src="file:///G:/IE104_Internet/DO_AN/img/logo-akira-education.png" id="img_01">
+                    </td>
+                    <td>
+                        <h2 class="color_01">Thông tin đăng ký lớp học</h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <form>
+            <table class="table_01">
+                <tr>
+                    <td colspan="2" class="color_01">
+                        Thông tin cá nhân
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Họ và Tên:
+                    </td>
+                    <td>
+                        <input id="hoten" type="text" class="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Số điện thoại:
+                    </td>
+                    <td>
+                        <input id="std" type="text" maxlength="10" class="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email:
+                    </td>
+                    <td>
+                        <input id="email" type="text" class="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="color_01">
+                        Đăng ký lớp học
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Trình độ
+                    </td>
+                    <td>
+                        <input name="TrinhDo" type="radio" /> N5
+                        <input name="TrinhDo" type="radio" /> N4
+                        <input name="TrinhDo" type="radio" /> N3
+                        <input name="TrinhDo" type="radio" /> N2
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Lớp học:
+                    </td>
+                    <td>
+                        <input name="LopHoc" type="radio" /> Ngữ pháp
+                        <input name="LopHoc" type="radio" /> Giao tiếp
+                        <input name="LopHoc" type="radio" /> Luyện thi 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hình thức:
+                    </td>
+                    <td>
+                        <input name="HinhThuc" type="radio" /> Online
+                        <input name="HinhThuc" type="radio" /> Offline
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Thời gian:
+                    </td>
+                    <td>
+                        <select id="ThoiGian_01" class="text">
+                            <option value="1" selected="selected">Thứ 2, Thứ 3, Thứ 4</option>
+                            <option value="2">Thứ 2, Thứ 4, Thứ 6</option>
+                            <option value="3">Thứ 3, Thứ 5, Thứ 7</option>
+                            <option value="4">Thứ 3, Thứ 4, Thứ 5</option>
+                        </select>
+                        <select id="ThoiGian_02" class="text" >
+                            <option value="1" selected="selected">7h30 - 9h00</option>
+                            <option value="2">9h00 - 10h30</option>
+                            <option value="3">15h00 - 16h30</option>
+                            <option value="4">17h00 - 18h30</option>
+                            <option value="5">18h30 - 20h00</option>
+                            <option value="6">20h00 - 21h30</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <div align="center">
+                <input id="DKlop" class="text" type="button" value="Đăng Ký">
+            </div>
+        </form>
+    </div>
+    <div id="div_02" class="text">
+        <table class="table_01">
+            <tr>
+                <td colspan="2" class="color_01" align="center">
+                    <h1>Thông tin học phí</h1>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_01">
+                    Chủ tài khoản:
+                </td>
+                <td>
+                    <img src="file:///G:/IE104_Internet/DO_AN/img/logo-akira-education.png" class="img_02">
+                    Trung tâm Nhật ngữ Akira
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Số tài khoản:
+                </td>
+                    <td>
+                        314 100 01210304
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Tại Ngân Hàng
+                    </td>
+                    <td>
+                        <img src="file:///G:/IE104_Internet/DO_AN/img/BIDV_logo.png" class="img_02">
+                        TMCP Đầu tư và Phát triển Việt Nam (BIDV) - CN Đông Sài Gòn
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nội dung:
+                    </td>
+                    <td>
+                        <div id="NoidungCK">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Số tiền:
+                    </td>
+                    <td>
+                        <div id="SotienCK">
+                        </div>
+                    </td>
+                </tr>
+        </table>
+        <div align="center">
+            <input id="Nddongtien" type="button" value="Tôi hiểu" class="text">
+        </div>
+    </div>
+</body>
+</html>
